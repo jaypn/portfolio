@@ -55,7 +55,7 @@
         </v-card-text>
 
         <v-card-actions>
-          <v-btn color="orange" text href="https://https://socialmedialike.ml/">
+          <v-btn color="orange" text href="https://socialmedialike.ml/">
             live website
           </v-btn>
 
@@ -88,7 +88,7 @@
         </v-card-text>
 
         <v-card-actions>
-          <v-btn color="orange" text href="https://https://jayfitness.ml/">
+          <v-btn color="orange" text href="https://jayfitness.ml/">
             live website
           </v-btn>
 
