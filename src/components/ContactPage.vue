@@ -57,10 +57,10 @@
       <v-col cols="12" md="6">
         <v-img src="../assets/contact.jpg"> </v-img>
       </v-col>
-      <v-col
+      <v-col class="align-center mx-16"
         ><v-row>
           <v-col>
-            <v-sheet class="mr-16" elevation="10" rounded="xl">
+            <v-sheet class="" elevation="10" rounded="xl">
               <v-sheet
                 color="light-blue"
                 class="pa-3 text-right"
