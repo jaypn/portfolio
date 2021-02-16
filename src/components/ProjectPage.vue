@@ -3,7 +3,8 @@
     <!-- <div class="font-weight-bold ml-8 mb-2 text-center green--text">
       My Project
     </div> -->
-    <h3 class="font-weight-bold mb-8 text-center green--text">Projects</h3>
+    <!-- <h3 class="font-weight-bold mb-8 text-center green--text">Projects</h3> -->
+    <section-title text="Projects" />
 
     <div cols="12" md="6" class="d-flex pa-2 justify-content:center flex-wrap">
       <v-card class="mx-auto" max-width="400">
@@ -106,7 +107,9 @@
 </template>
 
 <script>
+import SectionTitle from "./SectionTitle.vue";
 export default {
+  components: { SectionTitle },
   // data: () => ({
   //   messages: [
   //     {

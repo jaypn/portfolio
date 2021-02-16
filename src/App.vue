@@ -5,7 +5,7 @@
       color="white-smoke"
       scroll-target="#scrolling-techniques-4"
     >
-      <v-tabs centered>
+      <v-tabs class="top-bar" grow centered show-arrows>
         <v-tab @click="$vuetify.goTo('#home')">Home</v-tab>
         <v-tab @click="$vuetify.goTo('#about', { offset: 75 })">About Me</v-tab>
         <v-tab @click="$vuetify.goTo('#skills', { offset: 75 })">Skills</v-tab>
@@ -21,4 +21,9 @@
     <router-view />
   </v-app>
 </template>
+<style scoped>
+.top-bar {
+  width: 100%;
+}
+</style>
 

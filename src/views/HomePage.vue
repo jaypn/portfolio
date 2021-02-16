@@ -2,13 +2,14 @@
   <div id="home">
     <div class="main-div">
       <div class="welcome">
-        <h1 class="white--text">
-          I am Jean Paul Aime N, a Full Stack Developer
-        </h1>
+        <h4 class="white--text mx-8 text-h4">
+          I am Jean Paul Aime NYABUGANDA, a Junior Full Stack Developer
+        </h4>
         <v-btn
           @click="$vuetify.goTo('#project', { offset: 75 })"
-          class="ma-2"
+          class="mx-8 mt-4"
           color="white"
+          max-width="160"
         >
           See my Projects
         </v-btn>
@@ -50,5 +51,6 @@ export default {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 </style>

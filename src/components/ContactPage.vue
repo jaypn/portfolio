@@ -1,8 +1,9 @@
 <template>
   <div id="contactform">
-    <h2 class="font-weight-bold ml-8 mb-8 mt-8 text-center green--text">
+    <section-title text="Contact" />
+    <!-- <h2 class="font-weight-bold ml-8 mb-8 mt-8 text-center green--text">
       Contact
-    </h2>
+    </h2> -->
     <!-- <v-form @submit.prevent="submit">
       <v-container>
         <v-row>
@@ -78,27 +79,38 @@
 
               <div class="pa-4 d-flex flex-column">
                 <v-btn
-                  class="text-transform-none"
+                  class="text-transform-none indigo darken-4 white--text"
                   href="mailto:nyabugandejp@gmail.com"
                   >nyabugandejp@gmail.com
                 </v-btn>
                 <v-btn href="tel:+15879307885">(587) 930-7885 </v-btn>
                 <v-btn
-                  href="https://drive.google.com/file/d/1M1stmnVx2GVWY0tOECgQQxlSY13lp5Gp/view?usp=sharing"
+                  target="_blank"
+                  class="indigo darken-4 white--text"
+                  href="https://drive.google.com/file/d/1VsgsRIZkUAWzgd6Pa5YFGUl8itrqgp30/view?usp=sharing"
                 >
                   Resume
                 </v-btn>
                 <v-btn
+                  target="_blank"
                   href="https://www.linkedin.com/in/nyabuganda-jean-paul-aime-a62a14102/"
                   >linkedin
                 </v-btn>
-                <v-btn href="https://github.com/jaypn">linkedin </v-btn>
+                <v-btn
+                  class="indigo darken-4 white--text"
+                  target="_blank"
+                  href="https://github.com/jaypn"
+                  >GitHub
+                </v-btn>
               </div>
             </v-sheet>
           </v-col>
         </v-row>
-        <v-btn
-          href="javascript:void(
+        <v-row justify="center mt-4">
+          <v-col cols="auto">
+            <v-btn
+              class="colbtn indigo darken-4 white--text"
+              href="javascript:void(
         window.open(
           'https://form.jotform.com/203635649646263',
           'blank',
@@ -109,17 +121,21 @@
         )
       )
     "
-        >
-          Request a Quote
-        </v-btn></v-col
-      >
+            >
+              Request a Quote
+            </v-btn>
+          </v-col>
+        </v-row>
+      </v-col>
     </v-row>
   </div>
 </template>
 
 <script>
+import SectionTitle from "./SectionTitle.vue";
 // import axios from "axios";
 export default {
+  components: { SectionTitle },
   // data() {
   //   return {
   //     name: "",
@@ -163,5 +179,12 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
+.v-btn {
+  margin-bottom: 10px;
+  max-width: fit-content;
+}
+.colbtn {
+  /* background-color:#0; */
+}
 </style>

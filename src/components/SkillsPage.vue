@@ -1,7 +1,8 @@
 <template>
   <div id="skills" class="mt-16">
-    <h3 class="font-weight-bold mb-8 text-center green--text">Skills</h3>
-    <div class="align-center d-flex flex-wrap">
+    <section-title text="Skills" />
+    <!-- <h3 class="font-weight-bold mb-8 text-center green--text">Skills</h3> -->
+    <div id="background" class="align-center d-flex flex-wrap">
       <v-col cols="12" md="6">
         <v-img src="../assets/about.jpg"> </v-img>
       </v-col>
@@ -32,16 +33,19 @@
 </template>
 
 <script>
+import SectionTitle from "./SectionTitle.vue";
 export default {
+  components: { SectionTitle },
   data: () => ({
     tags: [
-      "HTML",
-      "CSS",
+      "HTML/CSS",
+      "Apache",
+      "Flask",
       "JavaScript",
       "Python",
       "VueJs",
-      "MySQL",
-      "Git",
+      "MariaDB/SQL",
+      "Git/GitHub",
       "Vuetify",
       "RestfullAPI",
       "Google Cloud",
@@ -53,6 +57,8 @@ export default {
 <style>
 #skills {
   min-height: 50vh;
+}
+#background {
   background-image: url("~@/assets/back1.jpeg");
 }
 </style>
