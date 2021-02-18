@@ -47,7 +47,7 @@ export default {
       "MariaDB/SQL",
       "Git/GitHub",
       "Vuetify",
-      "RestfullAPI",
+      "RestfulAPI",
       "Google Cloud",
     ],
   }),
